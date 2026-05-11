@@ -1,1 +1,1 @@
-# TP01-Sintaxis
+Testeo de un automata finito deterministico, toma las palabras del txt con caracter de corte ',' y verifica si es una cadena decimal
