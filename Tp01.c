@@ -14,7 +14,7 @@ Estado tablaTransiciones[3][3] = { //tabla[estadoActual][Columna]
 };
 
 void finDeCadena(Estado estado, FILE *salida){
-    if (estado == ERROR) {
+    if (estado == Q1) {
         fprintf(salida, " Aceptada\n");
     } else {
         fprintf(salida, " Rechazada\n");
@@ -44,7 +44,7 @@ void scanner(FILE *entrada, FILE *salida){ //revisa el archivo y envia la salida
         estadoActual = INICIO;
          }
     }
-    finDeCadena(estadoActual, salida)
+    finDeCadena(estadoActual, salida);
 }
 
 
@@ -52,7 +52,7 @@ void scanner(FILE *entrada, FILE *salida){ //revisa el archivo y envia la salida
 
 int main(){
 
-    printf("Programa qeu reonoce si un string es un numero decimal");
+    printf("Programa qeu reonoce si un string es un numero decimal \n");
       int caracter;
       Estado estadoActual = INICIO; //declaro los estados donde se va a mover la palabra
     FILE* texto;
